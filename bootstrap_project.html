@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang = 'en-US'>
+  <head>
+    <meta charset = "UTF-8">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+      h1 {text-align: center;
+          color:white;
+      }
+      h2{
+        color:white;
+      }
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        color:white;
+      }
+      div {
+        margin-right: 150px;
+        margin-left:150px;
+        font-size:25px;
+        color:white;
+      }
+      code {
+        margin-left: auto;
+        margin-right: auto;
+        font-family: Consolas, "courier new";
+        color: crimson;
+        padding:2px;
+        font-size:105%
+      }
+      a.btn:link, a.btn:visited{
+        background-color:#00bfff;
+        color:white;
+        padding:15px 25px;
+        text-align:center;
+        text-decoration:none;
+        display:inline-block;
+      }
+      a.btn:hover, a.btn:active{
+        background-color:#0040ff;
+      }
+      a.lnk:link, a.lnk:visited{
+        color:white;
+        background-color:none;
+        text-decoration:underline;
+      }
+      a.lnk:hover, a.lnk:active{
+        color:yellow;
+        background-color:none;
+        text-decoration:underline;
+      }
+      table, th, td{
+        border: 1px solid white
+      }
+    </style>
+    <link rel = "icon" href = "IMG_5145.PNG">
+  </head>
+<!--start of website-->
+  <body style = "background-color:rgb(4, 0, 76)" class = "container">
+    <h1> <strong> Coding in Python </strong> </h1>
+    <img title = "python app logo"
+    src = "https://banner2.cleanpng.com/20180412/kye/kisspng-python-programming-language-computer-programming-language-5acfdc3636bac7.8891188615235717662242.jpg"
+    class = "thumbnail"
+    alt = "python app logo"
+    width = 200 height = 200>
+    <a class = "btn" href = "#basics">Jump to Python Basics</a> <br>
+    <a class = "btn" href = "#seplib">Jump to Separate Python Libraries</a> <br>
+    <!--intro-->
+    <h1>Introduction</h1>
+    <div>
+      Python is a user-friendly programming language
+      that uses built-in functions and libraries in order to complete a variety
+      of tasks. In fact, Python is not <em>only</em> built to create any one
+      task. The Python official website states that:
+      <blockquote cite = "https://www.python.org/doc/essays/blurb/">
+        Python's simple, easy to learn syntax emphasizes readability and therefore
+        reduces the cost of program maintenance. Python supports modules and
+        packages, which encourages program modularity and code reuse. The Python
+        interpreter and the extensive standard library are available in source or
+        binary form without charge for all major platforms, and can be freely
+        distributed.
+      </blockquote>
+      In this tutorial, we will review some of the basic Python functions and
+      their uses as well as some prominent Python libraries you can incorporate
+      into your code:
+      <ol>
+        <li>Print</li>
+        <li>Input</li>
+        <li>Type</li>
+        <li>For Loop</li>
+      </ol>
+    </div>
+    <hr>
+    <!--major heading-functions-->
+    <h1 id = "basics">Basics</h1>
+    <a class = "btn" href = "#print">Jump to Print</a> <br>
+    <a class = "btn" href = "#input">Jump to Input</a> <br>
+    <a class = "btn" href = "#type">Jump to Type</a> <br>
+    <a class = "btn" href = "#for">Jump to For Loop</a> <br>
+<!--first section-->
+    <h2 id = "print">Print</h2>
+    <div class="container-fluid">
+      The print statement is one of the most simple Python commands: <br>
+      <!--makes a box around the code-->
+      <div class = "row">
+        <div class="col-mdb-6 bg-light text-danger">
+          <code>
+            #Input: <br>
+            print("Hello World")
+          </code>
+        </div>
+        <div class="col-md-6 bg-light text-danger">
+          <code>
+            #Output: <br>
+            Hello World
+          </code>
+        </div>
+      </div>
+      CODE <br>
+      This code simply returns:
+      <br>CODE<br>
+      You can also add variables to your print statements. For instance:
+      <br>CODE<br>
+      Returns:
+      <br>CODE<br>
+      Finally, you can also create an <em>f-string</em>, putting your variables into
+      brackets instead of using the <em>+</em> sign. This is especially useful when you
+      have a lot of variables in one line:
+      <br>CODE<br>
+      Returns:
+      <br>CODE<br>
+    </div>
+    <!--second section-->
+    <h2 id = "input">Input</h2>
+    <div>
+      The <em>input</em> function is relatively similar to the <em>print</em> function,
+      but it asks the user for an answer:
+      <br>CODE<br>
+      This will return the same message, but the user can enter an answer:
+      <br>CODE<br>
+      You can also store a user's input as a variable, then use it later:
+    <br>CODE<br>
+      This returns:
+      <br>CODE<br>
+    </div>
+
+    <!--third section-->
+    <h2 id = "type">Type</h2>
+    <div>
+      The <em>type</em> function simply returns the type of an object. Objects
+      can have several different types, and here are some of the most common:<br>
+      <table style="width:100%">
+        <tr>
+          <th>Type</th>
+          <th>Abbreviation</th>
+          <th style="width:50%">Explanation</th>
+          <th>Examples</th>
+        </tr>
+        <!--string-->
+        <tr>
+          <td>String</td>
+          <td>str</td>
+          <td>Can be anything but will not possess any special qualities. For instance,
+          one cannot add '1' and '2' if they are both strings; they must be converted to
+         integers.</td>
+          <td>'Hello World', '1', '0.3'</td>
+        </tr>
+        <!--integer-->
+        <tr>
+          <td>Integer</td>
+          <td>int</td>
+          <td>Any whole number; can be added, multiplied, etc. in equations</td>
+          <td>-5, 0, 100</td>
+        </tr>
+        <!--float-->
+        <tr>
+          <td>Float</td>
+          <td>float</td>
+          <td>Any decimal; possesses the same characteristics as int</td>
+          <td>-6.12, 0.324, 3.1415</td>
+        </tr>
+        <!--list-->
+        <tr>
+          <td>List</td>
+          <td>list</td>
+          <td>A group of objects contained in square brackets and separated by commas</td>
+          <td>['Hello', 9, 0.1, True]</td>
+        </tr>
+        <!--dictionary-->
+        <tr>
+          <td>Dictionary</td>
+          <td>dict</td>
+          <td>Similar to a list but organizes elements in key:value pairs; also uses curly brackets.</td>
+          <td>{'First':'Bob', 'Last':'Smith', 'Age':35}</td>
+        </tr>
+      </table>
+      You can simply find the type of an object by using type():
+      <br>CODE<br>
+      This returns:
+      <br>CODE<br>
+    </div>
+    <!--fourth section-->
+    <h2 id = "for">For Loops</h2>
+    <div>
+      Finally, for loops are the best way to complete repeated tasks with few lines
+      of code:
+      <br>CODE<br>
+      This returns:
+    <br>CODE<br>
+      For loops can be used to loop through different values. You can also use
+      if statements when writing for loops:
+      <br>CODE<br>
+      <br>CODE<br>
+    </div>
+    <!--major heading-libraries-->
+    <h1 id = "seplib">Separate Python Libraries</h1>
+    <div>
+      Here is a list of several python libraries as well as links and descriptions for further exploration:
+      <div>
+        <p> <a class = "lnk" href = "https://docs.python.org/3/library/math.html" target = "_blank"> math</a></p>
+        <ul style = list-style-type:disc;>
+          <li>Can execute more complicated mathematical calculations</li>
+          <li>Can round and find absolute values</li>
+          <li>Can get exact values for irrational numbers like &#120587;</li>
+      </div>
+      <div>
+        <p> <a class = "lnk" href = "https://docs.python.org/3/library/pprint.html" target = "_blank"> pprint</a></p>
+        <ul style = list-style-type:disc;>
+          <li>Means "Pretty Print"</li>
+          <li>Can format otherwise hard-to-read objects</li>
+          <li>Can let you format a complicated object in specific way (margins, etc)</li>
+      </div>
+      <div>
+        <p> <a class = "lnk" href = "https://numpy.org/" target = "_blank"> numpy</a></p>
+        <ul style = list-style-type:disc;>
+          <li>Multifunctional python library that draws on languages like C</li>
+          <li>Can create n-dimensional arrays with indexing and vectorization</li>
+          <li>Works best alongside other data science-based libraries such as
+          <a class = "lnk" href = "https://pandas.pydata.org/" target = "_blank"> pandas</a></li> and
+          <a class = "lnk" href = "https://seaborn.pydata.org/" target = "_blank"> seaborn</a>
+      </div>
+    </div>
+    <!--conclusion-->
+    <h1>Conclusion</h1>
+    <div>
+      In conclusion, Python is an incredibly useful coding language that has a multitude
+      of libraries adding extensions to its different uses. Happy coding!
+    </div>
+  </body>
+  </html>
