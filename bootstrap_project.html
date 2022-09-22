@@ -6,74 +6,47 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-
-    <style>
-      h1 {text-align: center;
-          color:white;
-      }
-      h2{
-        color:white;
-      }
-      img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        color:white;
-      }
-      div {
-        margin-right: 150px;
-        margin-left:150px;
-        font-size:25px;
-        color:white;
-      }
-      code {
-        margin-left: auto;
-        margin-right: auto;
-        font-family: Consolas, "courier new";
-        color: crimson;
-        padding:2px;
-        font-size:105%
-      }
-      a.btn:link, a.btn:visited{
-        background-color:#00bfff;
-        color:white;
-        padding:15px 25px;
-        text-align:center;
-        text-decoration:none;
-        display:inline-block;
-      }
-      a.btn:hover, a.btn:active{
-        background-color:#0040ff;
-      }
-      a.lnk:link, a.lnk:visited{
-        color:white;
-        background-color:none;
-        text-decoration:underline;
-      }
-      a.lnk:hover, a.lnk:active{
-        color:yellow;
-        background-color:none;
-        text-decoration:underline;
-      }
-      table, th, td{
-        border: 1px solid white
-      }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel = "icon" href = "IMG_5145.PNG">
   </head>
 <!--start of website-->
-  <body style = "background-color:rgb(4, 0, 76)" class = "container">
+  <body class = "container">
+    <nav class = "navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class = "container-fluid">
+        <div class = "collapse navbar-collapse" id = "collapsibleNavbar">
+          <ul class = "navbar-nav">
+            <li class = "nav-item">
+              <a class = "nav-link" href = "#">
+                <img src = "https://banner2.cleanpng.com/20180412/kye/kisspng-python-programming-language-computer-programming-language-5acfdc3636bac7.8891188615235717662242.jpg"
+                alt = "Logo" style = "width:40px;" class = "rounded-pill">
+              </a>
+            </li>
+
+            <li class = "nav-item dropdown">
+              <a class = "navbar-link dropdown-toggle" href = "#" role = "button" data-bs-toggle = "dropdown">Basics</a>
+              <ul class = "dropdown-menu">
+                <li><a class = "dropdown-item" href = "#print">Print Function</a></li>
+                <li><a class = "dropdown-item" href = "#input">Input Function</a></li>
+                <li><a class = "dropdown-item" href = "#type">Type Function</a></li>
+                <li><a class = "dropdown-item" href = "#for">For Loop Function</a></li>
+              </ul>
+            </li>
+            <li class = "nav-item">
+              <a class = "nav-link" href = "#seplib">More Libraries</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <h1> <strong> Coding in Python </strong> </h1>
     <img title = "python app logo"
     src = "https://banner2.cleanpng.com/20180412/kye/kisspng-python-programming-language-computer-programming-language-5acfdc3636bac7.8891188615235717662242.jpg"
     class = "thumbnail"
     alt = "python app logo"
     width = 200 height = 200>
-    <a class = "btn" href = "#basics">Jump to Python Basics</a> <br>
-    <a class = "btn" href = "#seplib">Jump to Separate Python Libraries</a> <br>
     <!--intro-->
     <h1>Introduction</h1>
-    <div>
+    <div class = "container-fluid">
       Python is a user-friendly programming language
       that uses built-in functions and libraries in order to complete a variety
       of tasks. In fact, Python is not <em>only</em> built to create any one
@@ -99,23 +72,19 @@
     <hr>
     <!--major heading-functions-->
     <h1 id = "basics">Basics</h1>
-    <a class = "btn" href = "#print">Jump to Print</a> <br>
-    <a class = "btn" href = "#input">Jump to Input</a> <br>
-    <a class = "btn" href = "#type">Jump to Type</a> <br>
-    <a class = "btn" href = "#for">Jump to For Loop</a> <br>
 <!--first section-->
     <h2 id = "print">Print</h2>
     <div class="container-fluid">
       The print statement is one of the most simple Python commands: <br>
       <!--makes a box around the code-->
       <div class = "row">
-        <div class="col-mdb-6 bg-light text-danger">
+        <div class="col p-2 bg-light text-danger">
           <code>
             #Input: <br>
             print("Hello World")
           </code>
         </div>
-        <div class="col-md-6 bg-light text-danger">
+        <div class="col p-2 bg-light text-danger">
           <code>
             #Output: <br>
             Hello World
@@ -155,11 +124,11 @@
     <div>
       The <em>type</em> function simply returns the type of an object. Objects
       can have several different types, and here are some of the most common:<br>
-      <table style="width:100%">
+      <table>
         <tr>
           <th>Type</th>
           <th>Abbreviation</th>
-          <th style="width:50%">Explanation</th>
+          <th>Explanation</th>
           <th>Examples</th>
         </tr>
         <!--string-->
@@ -224,21 +193,21 @@
       Here is a list of several python libraries as well as links and descriptions for further exploration:
       <div>
         <p> <a class = "lnk" href = "https://docs.python.org/3/library/math.html" target = "_blank"> math</a></p>
-        <ul style = list-style-type:disc;>
+        <ul>
           <li>Can execute more complicated mathematical calculations</li>
           <li>Can round and find absolute values</li>
           <li>Can get exact values for irrational numbers like &#120587;</li>
       </div>
       <div>
         <p> <a class = "lnk" href = "https://docs.python.org/3/library/pprint.html" target = "_blank"> pprint</a></p>
-        <ul style = list-style-type:disc;>
+        <ul>
           <li>Means "Pretty Print"</li>
           <li>Can format otherwise hard-to-read objects</li>
           <li>Can let you format a complicated object in specific way (margins, etc)</li>
       </div>
       <div>
         <p> <a class = "lnk" href = "https://numpy.org/" target = "_blank"> numpy</a></p>
-        <ul style = list-style-type:disc;>
+        <ul>
           <li>Multifunctional python library that draws on languages like C</li>
           <li>Can create n-dimensional arrays with indexing and vectorization</li>
           <li>Works best alongside other data science-based libraries such as
