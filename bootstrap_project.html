@@ -10,7 +10,7 @@
     <link rel = "icon" href = "IMG_5145.PNG">
   </head>
 <!--start of website-->
-  <body class = "container">
+  <body class = "container-fluid">
     <nav class = "navbar navbar-expand-sm bg-dark navbar-dark">
       <div class = "container-fluid">
         <div class = "collapse navbar-collapse" id = "collapsibleNavbar">
@@ -23,7 +23,7 @@
             </li>
 
             <li class = "nav-item dropdown">
-              <a class = "navbar-link dropdown-toggle" href = "#" role = "button" data-bs-toggle = "dropdown">Basics</a>
+              <a class = "nav-link dropdown-toggle" href = "#" role = "button" data-bs-toggle = "dropdown">Basics</a>
               <ul class = "dropdown-menu">
                 <li><a class = "dropdown-item" href = "#print">Print Function</a></li>
                 <li><a class = "dropdown-item" href = "#input">Input Function</a></li>
@@ -39,11 +39,6 @@
       </div>
     </nav>
     <h1> <strong> Coding in Python </strong> </h1>
-    <img title = "python app logo"
-    src = "https://banner2.cleanpng.com/20180412/kye/kisspng-python-programming-language-computer-programming-language-5acfdc3636bac7.8891188615235717662242.jpg"
-    class = "thumbnail"
-    alt = "python app logo"
-    width = 200 height = 200>
     <!--intro-->
     <h1>Introduction</h1>
     <div class = "container-fluid">
@@ -51,13 +46,14 @@
       that uses built-in functions and libraries in order to complete a variety
       of tasks. In fact, Python is not <em>only</em> built to create any one
       task. The Python official website states that:
-      <blockquote cite = "https://www.python.org/doc/essays/blurb/">
-        Python's simple, easy to learn syntax emphasizes readability and therefore
+      <blockquote class = "blockquote">
+        <p>Python's simple, easy to learn syntax emphasizes readability and therefore
         reduces the cost of program maintenance. Python supports modules and
         packages, which encourages program modularity and code reuse. The Python
         interpreter and the extensive standard library are available in source or
         binary form without charge for all major platforms, and can be freely
-        distributed.
+        distributed.</p>
+        <footer class = "blockquote-footer">cite = "https://www.python.org/doc/essays/blurb/"</footer>
       </blockquote>
       In this tutorial, we will review some of the basic Python functions and
       their uses as well as some prominent Python libraries you can incorporate
@@ -78,26 +74,35 @@
       The print statement is one of the most simple Python commands: <br>
       <!--makes a box around the code-->
       <div class = "row">
-        <div class="col p-2 bg-light text-danger">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 bg-light text-danger">
           <code>
             #Input: <br>
             print("Hello World")
           </code>
         </div>
-        <div class="col p-2 bg-light text-danger">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 bg-light text-danger">
           <code>
             #Output: <br>
             Hello World
           </code>
         </div>
       </div>
-      CODE <br>
-      This code simply returns:
-      <br>CODE<br>
       You can also add variables to your print statements. For instance:
-      <br>CODE<br>
-      Returns:
-      <br>CODE<br>
+      <div class = "row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 bg-light text-danger">
+          <code>
+            #Input: <br>
+            x = 2 + 3 <br>
+            print("2 + 3 = " + x)
+          </code>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 bg-light text-danger">
+          <code>
+            #Output: <br>
+            2 + 3 = 5
+          </code>
+        </div>
+      </div>
       Finally, you can also create an <em>f-string</em>, putting your variables into
       brackets instead of using the <em>+</em> sign. This is especially useful when you
       have a lot of variables in one line:
