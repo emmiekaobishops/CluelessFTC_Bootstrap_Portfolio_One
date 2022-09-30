@@ -8,6 +8,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel = "icon" href = "IMG_5145.PNG">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   </head>
 <!--start of website-->
   <body class = "container-fluid">
@@ -32,7 +35,7 @@
               </ul>
             </li>
             <li class = "nav-item">
-              <a class = "nav-link" href = "#seplib">More Libraries</a>
+              <a class = "nav-link" href = "libraries.html">More Libraries</a>
             </li>
           </ul>
         </div>
@@ -96,25 +99,13 @@
       <div class = "row">
         <div class="col-12 col-sm-12 col-md-6 col-lg-4 bg-light text-danger">
           <code>
-            #Input: <br>type('Hello')
+            #Input: <br>print(type('Hello'))
           </code>
         </div>
         <div class="col-12 col-sm-12 col-md-6 col-lg-4 bg-light text-danger">
           <code>
-            #Output: <br>str
-          </code>
-        </div>
-      </div>
-      Or:
-      <div class = "row">
-        <div class="col-12 col-sm-12 col-md-6 col-lg-4 bg-light text-danger">
-          <code>
-            #Input: <br>type(90)
-          </code>
-        </div>
-        <div class="col-12 col-sm-12 col-md-6 col-lg-4 bg-light text-danger">
-          <code>
-            #Output: <br>int
+            <!--have to use different notation because <class 'str'> will interpreted as a tag in HTML-->
+            #Output: <br>&lt;class 'str'&gt;
           </code>
         </div>
       </div>
@@ -122,12 +113,25 @@
       <div class = "row">
         <div class="col-12 col-sm-12 col-md-6 col-lg-4 bg-light text-danger">
           <code>
-            #Input: <br>type(99.99)
+            #Input: <br>print(type(90))
           </code>
         </div>
         <div class="col-12 col-sm-12 col-md-6 col-lg-4 bg-light text-danger">
           <code>
-            #Output: <br>float
+            #Output: <br>&lt;class 'int'&gt;
+          </code>
+        </div>
+      </div>
+      Or:
+      <div class = "row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 bg-light text-danger">
+          <code>
+            #Input: <br>print(type(99.99))
+          </code>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 bg-light text-danger">
+          <code>
+            #Output: <br>&lt;class 'float'&gt;
           </code>
         </div>
       </div>
@@ -135,6 +139,25 @@
       <div class = "alert alert-info">
         <strong>Type functions</strong> are especially helpful when debugging,
         since your computer often expects one type of variable but recieves another!
+      </div>
+      <div><strong>Section Challenge:</strong><br>
+        Get the user to input a character, and then test the type() function on their input. What do you notice?
+        <iframe src="https://trinket.io/embed/python/be6b2dde0e" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      </div>
+      <button type = "button" class = "button" data-bs-toggle = "collapse" data-bs-target = "#answer"><strong>Answer:</strong></button>
+      <div id = "answer" class = "collapse">
+        <div class = "row">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4 bg-light text-danger">
+            <code>
+              user_input = input("Enter a character: ")
+              print(type(user_input))
+            </code>
+          </div>
+        </div>
+        <div class = "alert alert-info">
+          Inputs will <emph>always</emph> appear as strings, and you will have
+          to convert them in order to make them into other types.
+        </div>
       </div>
     </div>
   </body>

@@ -8,6 +8,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel = "icon" href = "IMG_5145.PNG">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   </head>
 <!--start of website-->
   <body class = "container-fluid">
@@ -32,7 +35,7 @@
               </ul>
             </li>
             <li class = "nav-item">
-              <a class = "nav-link" href = "#seplib">More Libraries</a>
+              <a class = "nav-link" href = "libraries.html">More Libraries</a>
             </li>
           </ul>
         </div>
@@ -56,6 +59,12 @@
             Hello World
           </code>
         </div>
+      </div>
+      <div>Try it yourself! Click the "Run"
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-play-fill" viewBox="0 0 16 16">
+          <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM6 5.883a.5.5 0 0 1 .757-.429l3.528 2.117a.5.5 0 0 1 0 .858l-3.528 2.117a.5.5 0 0 1-.757-.43V5.884z"/>
+        </svg> button and see what happens. You can input different characters for Python to print:<br>
+        <iframe src="https://trinket.io/embed/python/90f0c3f1e4" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
       </div>
       You can also add variables to your print statements. For instance:
       <div class = "row">
@@ -95,6 +104,20 @@
       <br>
       <div class = "alert alert-success">
         <strong>Print statements</strong> are incredibly helpful when displaying messages to readers!
+      </div>
+      <div><strong>Section Challenge:</strong><br>
+        Change the order of the variables to solve the riddle!<br>
+        <iframe src="https://trinket.io/embed/python/7f099f6978" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      </div>
+      <button type = "button" class = "button" data-bs-toggle = "collapse" data-bs-target = "#answer"><strong>Answer:</strong></button>
+      <div id = "answer" class = "collapse">
+        <div class = "row">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4 bg-light text-danger">
+            <code>
+              print("a " + s + h + i + r + t + "!")
+            </code>
+          </div>
+        </div>
       </div>
     </div>
   </body>
