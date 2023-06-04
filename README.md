@@ -1,1 +1,2 @@
-This website uses multiple pages to present different aspects of an organization (in this case, my service club). It incorporates Bootstrap in elements like the navbar and column spacing.
+This website is a remake of the original Python tutorial using Bootstrap. It uses embedded code that a user can run on the 
+website and contains multiple pages.
