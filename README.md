@@ -1,2 +1,1 @@
-This website is a remake of the original Python tutorial using Bootstrap. It uses embedded code that a user can run on the 
-website and contains multiple pages.
+This website uses both Bootstrap (with HTML and CSS) to format a Python tutorial. It uses different CSS elements like buttons and links to make the page more user-friendly. Additionally, it uses embedded code that a user can run on the website and contains multiple pages.
